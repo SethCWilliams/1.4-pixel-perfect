@@ -2,7 +2,15 @@
 <html>
 
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oswald|Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+
     <link rel="stylesheet" href="static/styles.css">
+
+    <title>pixel perfect</title>
+
 </head>
 
 <body>
@@ -16,18 +24,22 @@
             <li>ABOUT ME</li>
             <li>CONTACT</li>
             <div class="right">
-            <li class=>icons go here</li>
-            <li class="nopadding">icon</li>
+            <li class="fab fa-facebook-f"></li>
+            <li class="fab fa-twitter"></li>
+            <li class="fab fa-instagram"></li>
+            <li class="fab fa-pinterest"></li>
+            <li class="fab fa-google-plus"></li>
+            <li class="fab fa-search"></li>
             </div>
         </ul>
     </header>
 
     <main>
-        <section>
-            <h1>KOTHA <span>PRO</span></h1>
+        <section class="center sixfourmargin">
+            <img src="static/kotha-logo.png" alt="company logo">
         </section>
-        <section class="slide-right background-image center">
-            <div class= "margin-bottom white padding-top landscape-image">
+        <section class="slide-right center">
+            <div class= "margin-bottom white padding-top">
                 <img src="compdog.jpg" alt="avatar" class="well-rounded">
                 <h4>KOTHA SMITH</h4>
                 <p>Lorem ipsum dolor amet humblebrag succulents tilde green juice vice live-edge. Photo booth tilde health goth, mumblecore kinfolk ramps unicorn palo santo microdosing leggings lomo. YOLO polaroid iPhone franzen, roof party cronut heirloom banjo small batch</p>
@@ -38,9 +50,9 @@
                 <h4>Popular Posts</h4>
                 <div>
                     <img src="static/kembashrug.jpg" alt="KembaShrug" class="asideimg">
-                    <h5>Greatest Hornet Ever?</h5>
+                    <h5 class="text-left">Greatest Hornet Ever?</h5>
                     <p>November 16, 2018</p>
-                </div> 
+                </div>
                 <div>
                     <img src="static/sandy-boots.jpg" alt="boots on the beach" class="asideimg">
                     <h5>Who Are You?</h5>
@@ -55,7 +67,9 @@
         </section>
 
         <section>
-            <div{{blog_posts}}>
+            <div class="main-posts" {{blog_posts}}>
+                <img src="static/post-thumb-1.jpg" alt="man on mountain">
+            </div>
         </section>
 
         <section class="clear">
@@ -67,22 +81,25 @@
                 <li class="white">>></li>
             </ul>
         </section>
+
     </main>
 
-    <section>
-        <h2 class="center white">Follow @ Instagram</h2>
-    </section>
 
-    <section>
-        <!--this has to be a ton of images that are against each other to make up the middle of the fat footer-->
-    </section>
+        <section>
+            <h2 class="center white">Follow @ Instagram</h2>
+        </section>
 
-    <footer class="center black">
-        <p class="black">c/ 2017 Kotha PRO - Designed with *heart* by ShapedTheme </p>
-    </footer>
+        <section>
+            <img src="" alt="">
+        </section>
+
+        <footer class="center black">
+            <p class="black">c/ 2017 Kotha PRO - Designed with *heart* by ShapedTheme </p>
+        </footer>
 
 
-    </div>
+        </div>
+
 
 </body>
 </html>
