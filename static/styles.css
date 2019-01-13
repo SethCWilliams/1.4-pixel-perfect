@@ -29,6 +29,7 @@ main {
 
 body {
     background-color: #F4F4F4;
+
 }
 
 .sixfourmargin {
@@ -46,7 +47,7 @@ body {
 }
 
 .background-image {
-    background-image: landscape.jpg;
+    background-image: url("post-thumb-1.jpg");
 }
 
 .padding-top {
