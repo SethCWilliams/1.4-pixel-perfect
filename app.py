@@ -19,24 +19,39 @@ def index():
 
     # 3. Open the csv file and read it using the CSV library. This will give you a list of rows.
     # See: https://docs.python.org/3/library/csv.html#csv.DictReader
+
     with open('data.csv') as csvfile:
         data_csv = csv.DictReader(csvfile)
         for row in data_csv:
-            print(image['{{image}}'], category['{{category}}'], title['{{title}}'], body['{{body}}'], author['{{author}}'],
-            date['{{date}}'])
+            print(row['image'], row['category'], row['title'], row['body'], row['author'],
+            row['date'])
     # 4. Loop over each row in the CSV. Each row is a blog post.
 
     # 5. Take post_html and replace {{title}} {{body}} {{author}} with the data in each blog post csv row
 
+            columns = row.keys()
+            current_post = post_html
+            for col in columns:
+                current_post = current_post.replace('{{' + col + '}}', row[col])
+            blog_posts.append(current_post)
+
+
     # 6. Add the post_html to the new list you created above.
 
+
+
+
+
     # 7. Join all the items in your new list together into a single string. Name this string "blog_post_html".
+
+    blog_post_html = ' '.join(blog_posts)
+
 
     # 8. Open the index.html file and replace {{blog_posts}} with the blog post string you just created.
     index_file = open('index.html', 'r')
     index_html = index_file.read()
 
-    index_html.replace('{{blog_posts}}', blog_post_html)
+    index_html = index_html.replace('{{blog_posts}}', blog_post_html)
 
     index_file.close()
 
