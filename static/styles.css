@@ -10,7 +10,7 @@ ul {
 }
 
 header  {
-    font-size: 8px;
+    font-size: 10px;
     padding-top: 26px;
     padding-bottom: 26px;
     padding-left: 149px;
@@ -34,7 +34,7 @@ body {
 
 .sixfourmargin {
     margin-top: 64px;
-    margin-bottom: 64px;
+    margin-bottom: 54px;
 }
 
 .well-rounded {
@@ -48,10 +48,12 @@ body {
 
 .background-image {
     background-image: url("post-thumb-1.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .padding-top {
-    padding-top: 12%;
+    padding-top: 150px;
 }
 
 .right {
@@ -60,17 +62,6 @@ body {
 
 .margin-bottom {
     margin-bottom: 7%;
-}
-
-h1  {
-    font-family: "playfair+display";
-    text-align: center;
-    font-size: 27px;
-    padding-bottom: 62px;
-    padding-top: 66px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: gray;
 }
 
 .center {
@@ -120,4 +111,26 @@ h1  {
     text-align: left;
 }
 
-.blog-post
+.together {
+    border: none;
+    margin: none;
+    padding: none;
+    float: left;
+    width: 12.5%;
+}
+
+.blog-post {
+    border: 1px solid #EAEAEA;
+}
+
+
+
+.category {
+    text-align: center;
+    font-family: oswald, Serif;
+    text-transform: uppercase;
+}
+
+.title {
+    text-align: center;
+}
